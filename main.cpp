@@ -17,6 +17,7 @@ void CreateProducts()
     products.push_back(Product(1, "Apple", 0.75));
     products.push_back(Product(2, "Banana", 0.60));
     products.push_back(Product(3, "Orange", 0.80));
+    products.push_back(Product(3, "Grapefruit", 1.80));
 
     // Loop through the products and write their information to a file named: products.dat
     std::ofstream file("products.dat");
