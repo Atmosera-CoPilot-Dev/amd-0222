@@ -1,6 +1,7 @@
 // main.cpp
 #include <iostream>
-
+#include <string>
+#include "helpers.hpp"
 #include "product.hpp"
 #include <vector>
 #include <fstream>
@@ -11,6 +12,11 @@ This function demonstrates how to crete instances of a product and add them to a
 
 void CreateProducts()
 {
+
+    // Display a welcome message to the user
+    std::cout << GetWelcomeMessage() << std::endl;
+
+    // Create a container that holds a dynamic array of objects of type Product.
     std::vector<Product> products;
 
     // Create a few products and add them to the vector
