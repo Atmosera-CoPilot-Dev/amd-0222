@@ -4,6 +4,7 @@ This file define a class to represent a product, including the following private
 - name: a string representing the name of the product
 - price: a double representing the price of the product
 */
+#pragma once
 
 #include <string>
 
@@ -21,6 +22,9 @@ public:
     // Setters
     void SetName(std::string name);
     void SetPrice(double price);
+
+    // ToString
+    std::string ToString() const;
 
 private:
     int id;
